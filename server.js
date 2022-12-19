@@ -5,7 +5,8 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log("Microservices rock!");
+    const owner = process.env.OWNER;
+    console.log(`${owner}'s Microservices rock!`);
     await sleep(5000);
   }
 }
